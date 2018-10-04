@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Content "," Screen 2 ");
         }  else if (v.getId() == R.id.button) {
             Intent intentMain = new Intent(Intent.ACTION_VIEW);
-            intentMain.setData(Uri.parse("geo://14.693600, 121.110400"));
+            intentMain.setData(Uri.parse("geo:14.6097, 120.9896"));
+            intentMain.setPackage("com.google.android.apps.maps");
+            startActivity(intentMain);
         }
     }
 }
